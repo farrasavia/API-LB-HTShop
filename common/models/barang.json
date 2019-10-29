@@ -1,0 +1,36 @@
+{
+  "name": "barang",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nama_barang": {
+      "type": "string",
+      "required": true
+    },
+    "harga_barang": {
+      "type": "number",
+      "required": true
+    },
+    "kategori": {
+      "type": "string",
+      "required": true
+    },
+    "deskripsi": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "pemesanan": {
+    "type": "belongsTo",
+    "model": "pemesanan",
+    "foreignKey": "pemesananId"
+  }
+  },
+  "acls": [],
+  "methods": {}
+}

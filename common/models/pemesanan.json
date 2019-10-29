@@ -1,0 +1,32 @@
+{
+    "name": "pemesanan",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "options": {
+      "validateUpsert": true
+    },
+    "properties": {
+      "nama_pemesan": {
+        "type": "string",
+        "required": true
+      },
+      "alamat_pemesan": {
+        "type": "number",
+        "required": true
+      },
+      "telp_pemesan": {
+        "type": "string",
+        "required": true
+      }
+    },
+    "validations": [],
+    "relations": {
+        "barang":{
+            "type": "hasMany",
+            "model": "barang",
+            "foreignKey": "pemesananId"
+          }
+    },
+    "acls": [],
+    "methods": {}
+  }

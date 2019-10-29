@@ -1,0 +1,13 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mongodb" : {
+    "database" : "htshop",
+    "name" :"mongodb",
+    "connector" : "mongodb",
+    "extended_operator" : true,
+    "allowExtendedOperators" : true
+  }
+}
