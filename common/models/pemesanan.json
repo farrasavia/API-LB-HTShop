@@ -6,15 +6,31 @@
       "validateUpsert": true
     },
     "properties": {
+      "nama_barang": {
+        "type": "string",
+        "required": true
+      },
+      "tanggal": {
+        "type": "string",
+        "required": true
+      },
       "nama_pemesan": {
         "type": "string",
         "required": true
       },
       "alamat_pemesan": {
-        "type": "number",
+        "type": "string",
         "required": true
       },
       "telp_pemesan": {
+        "type": "string",
+        "required": true
+      },
+      "pengiriman": {
+        "type": "string",
+        "required": true
+      },
+      "catatan": {
         "type": "string",
         "required": true
       }

@@ -10,15 +10,19 @@
       "type": "string",
       "required": true
     },
+    "kondisi": {
+      "type": "string",
+      "required": true
+    },
     "harga_barang": {
       "type": "number",
       "required": true
     },
-    "kategori": {
+    "keterangan": {
       "type": "string",
       "required": true
     },
-    "deskripsi": {
+    "kategori": {
       "type": "string",
       "required": true
     }
