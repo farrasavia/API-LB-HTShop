@@ -14,15 +14,19 @@
       "type": "string",
       "required": true
     },
+    "quantity": {
+      "type": "string",
+      "required": true
+    },
+    "kategori": {
+      "type": "string",
+      "required": true
+    },
     "harga_barang": {
       "type": "number",
       "required": true
     },
     "keterangan": {
-      "type": "string",
-      "required": true
-    },
-    "kategori": {
       "type": "string",
       "required": true
     }
