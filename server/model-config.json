@@ -42,5 +42,9 @@
   "pemesanan": {
     "dataSource": "mongodb",
     "public": true
+  },
+  "container" :{
+    "dataSource" : "storage",
+    "public" : true
   }
 }

@@ -9,5 +9,11 @@
     "connector" : "mongodb",
     "extended_operator" : true,
     "allowExtendedOperators" : true
+  },
+  "storage" : {
+    "name" : "storage",
+    "connector" : "loopback-component-storage",
+    "provider" : "filesystem",
+    "root" : "./files"
   }
 }
