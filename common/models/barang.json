@@ -29,16 +29,17 @@
     "keterangan": {
       "type": "string",
       "required": true
+    },
+    "imgurl": {
+      "type": "string",
+      "required": true
     }
   },
   "validations": [],
   "relations": {
-    "pemesanan": {
-    "type": "belongsTo",
-    "model": "pemesanan",
-    "foreignKey": "pemesananId"
-  }
+    
   },
+  
   "acls": [],
   "methods": {}
 }

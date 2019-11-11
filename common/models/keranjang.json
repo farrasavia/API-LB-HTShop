@@ -1,42 +1,22 @@
 {
-    "name": "pemesanan",
+    "name": "keranjang",
     "base": "PersistedModel",
     "idInjection": true,
     "options": {
       "validateUpsert": true
     },
     "properties": {
-      "nama_barang": {
+      "id_customer": {
         "type": "string",
         "required": true
       },
-      "tanggal": {
+      "id_barang": {
         "type": "string",
         "required": true
       },
-      "nama_pemesan": {
+      "harga_barang": {
         "type": "string",
         "required": true
-      },
-      "alamat_pemesan": {
-        "type": "string",
-        "required": true
-      },
-      "telp_pemesan": {
-        "type": "string",
-        "required": true
-      },
-      "pengiriman": {
-        "type": "string",
-        "required": true
-      },
-      "catatan": {
-        "type": "string",
-        "required": true
-      },
-      "status": {
-        "type": "boolean"
-        
       }
     },
     "validations": [],
