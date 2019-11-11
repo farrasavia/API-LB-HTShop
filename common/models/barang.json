@@ -33,6 +33,10 @@
     "imgurl": {
       "type": "string",
       "required": true
+    },
+    "createAt":{
+      "type":"date",
+      "defaultFn": "now"
     }
   },
   "validations": [],
