@@ -1,5 +1,5 @@
 {
-    "name": "pemesanan",
+    "name": "pemesanan_final",
     "base": "PersistedModel",
     "idInjection": true,
     "options": {
