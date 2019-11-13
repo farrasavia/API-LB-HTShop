@@ -1,5 +1,5 @@
 {
-    "name": "pemesanan",
+    "name": "pemesanan_final",
     "base": "PersistedModel",
     "idInjection": true,
     "options": {
@@ -35,8 +35,8 @@
         "required": true
       },
       "status": {
-        "type": "string",
-        "defaultFn": "request"
+        "type": "boolean"
+        
       },
       "createAt":{
         "type":"date",
