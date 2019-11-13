@@ -46,5 +46,9 @@
   "container" :{
     "dataSource" : "storage",
     "public" : true
+  },
+  "keranjang": {
+    "dataSource": "mongodb",
+    "public": true
   }
 }

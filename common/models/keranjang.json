@@ -14,7 +14,7 @@
         "type": "string",
         "required": true
       },
-      "harga_barang": {
+      "imgurl": {
         "type": "string",
         "required": true
       }
