@@ -54,5 +54,9 @@
   "keranjang": {
     "dataSource": "mongodb",
     "public": true
+  },
+  "transaksi": {
+    "dataSource": "mongodb",
+    "public": true
   }
 }
