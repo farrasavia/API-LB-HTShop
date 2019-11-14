@@ -35,8 +35,7 @@
         "required": true
       },
       "status": {
-        "type": "string",
-        "defaultFn": "request"
+        "type": "string"
       },
       "createAt":{
         "type":"date",
