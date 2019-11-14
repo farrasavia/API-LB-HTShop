@@ -10,7 +10,7 @@
         "type": "string",
         "required": true
       },
-      "tanggal": {
+      "quantity": {
         "type": "string",
         "required": true
       },
@@ -33,6 +33,11 @@
       "catatan": {
         "type": "string",
         "required": true
+      },
+      "total":{
+        "type":"string",
+        "required":true
+
       },
       "status": {
         "type": "string"
