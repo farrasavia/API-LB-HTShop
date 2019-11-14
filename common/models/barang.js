@@ -15,14 +15,14 @@ module.exports = function(Barang) {
           });
         }).then(function(res) {
           if (!res) callback(err);
-          return callback(null, res[0]);
+          return callback(null, res);
         }).catch(function(err) {
           callback(err);
         });
       };
       Barang.getBarangByKategori = function(kategori, callback) {
         new Promise(function(resolve, reject) {
-                // find name
+                // find kategori
           Barang.find({where: {kategori: {like: kategori}}}, function(err, result) {
             if (err) reject(err);
             if (result === null) {
