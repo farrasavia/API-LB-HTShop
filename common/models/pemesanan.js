@@ -34,10 +34,10 @@ module.exports = function(Pemesanan) {
     }
     );
     
-Pemesanan.getStatusPemesanan = function(callback) {
+Pemesanan.getStatusPemesanan = function(statuss, callback) {
   new Promise(function(resolve, reject) {
           // find name
-    Pemesanan.find({where: {status:  true}}, function(err, result) {
+    Pemesanan.find({where: {status:  {like:statuss}}}, function(err, result) {
       if (err) reject(err);
       if (result === null) {
         err = new Error('User not Found');
@@ -57,6 +57,9 @@ Pemesanan.getStatusPemesanan = function(callback) {
       'getStatusPemesanan',
   {
     description: 'get status pemesanan',
+    accepts:[
+      {arg: 'statuss', type: 'string'},
+    ],
     returns: {
       arg: 'res', type: 'object', root: true,
     },
