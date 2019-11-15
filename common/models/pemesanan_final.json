@@ -1,56 +1,58 @@
 {
-    "name": "pemesanan_final",
-    "base": "PersistedModel",
-    "idInjection": true,
-    "options": {
-      "validateUpsert": true
+  "name": "pemesanan_final",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nama_barang": {
+      "type": "string"
     },
-    "properties": {
-      "nama_barang": {
-        "type": "string",
-        "required": true
-      },
-      "tanggal": {
-        "type": "string",
-        "required": true
-      },
-      "nama_pemesan": {
-        "type": "string",
-        "required": true
-      },
-      "alamat_pemesan": {
-        "type": "string",
-        "required": true
-      },
-      "telp_pemesan": {
-        "type": "string",
-        "required": true
-      },
-      "pengiriman": {
-        "type": "string",
-        "required": true
-      },
-      "catatan": {
-        "type": "string",
-        "required": true
-      },
-      "status": {
-        "type": "boolean"
-        
-      },
-      "createAt":{
-        "type":"date",
-        "defaultFn": "now"
-      }
+    "quantity": {
+      "type": "string",
+      "required": true
     },
-    "validations": [],
-    "relations": {
-        "barang":{
-            "type": "hasMany",
-            "model": "barang",
-            "foreignKey": "pemesananId"
-          }
+    "nama_pemesan": {
+      "type": "string",
+      "required": true
     },
-    "acls": [],
-    "methods": {}
-  }
+    "alamat_pemesan": {
+      "type": "string",
+      "required": true
+    },
+    "telp_pemesan": {
+      "type": "string",
+      "required": true
+    },
+    "pengiriman": {
+      "type": "string",
+      "required": true
+    },
+    "catatan": {
+      "type": "string",
+      "required": true
+    },
+    "total":{
+      "type":"string"
+
+    },
+    "status": {
+      "type": "boolean"
+    },
+    "createAt":{
+      "type":"date",
+      "defaultFn": "now"
+    }
+  },
+  "validations": [],
+  "relations": {
+      "barang":{
+          "type": "hasMany",
+          "model": "barang",
+          "foreignKey": "pemesananId"
+        }
+  },
+  "acls": [],
+  "methods": {}
+}

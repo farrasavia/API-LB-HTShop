@@ -7,8 +7,7 @@
     },
     "properties": {
       "nama_barang": {
-        "type": "string",
-        "required": true
+        "type": "string"
       },
       "quantity": {
         "type": "string",
@@ -35,9 +34,7 @@
         "required": true
       },
       "total":{
-        "type":"string",
-        "required":true
-
+        "type":"string"
       },
       "status": {
         "type": "string"
